@@ -19,6 +19,11 @@ chrome.runtime.onInstalled.addListener(() => {
     title: "Save as HTML",
     contexts: ["selection"],
   });
+  chrome.contextMenus.create({
+    id: "supportThisProject",
+    title: "Support this project",
+    contexts: ["selection"],
+  });
 });
 
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {

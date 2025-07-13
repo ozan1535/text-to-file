@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quill Downloader</title>
+    <link href="libs/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="label">Export Your Content</div>
+    <div id="editor-container">
+      <div id="toolbar"></div>
+      <div id="editor"></div>
+    </div>
+
+    <div class="controls">
+      <select id="format">
+        <option value="txt">Download as TXT</option>
+        <option value="docx">Download as DOCX</option>
+        <option value="pdf">Download as PDF</option>
+        <option value="html">Download as HTML</option>
+      </select>
+      <button id="downloadBtn">Download</button>
+    </div>
+    <a
+      href="https://buymeacoffee.com/ozanbilgic"
+      target="_blank"
+      class="support"
+      >Support this project</a
+    >
+    <script src="libs/quill.min.js"></script>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

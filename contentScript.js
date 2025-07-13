@@ -59,6 +59,9 @@ if (!window.hasAddedListener) {
         doc.text(lines, margin, margin);
         doc.save("text_output.pdf");
         break;
+      case "supportThisProject":
+        window.open("https://buymeacoffee.com/ozanbilgic", "_blank");
+        break;
 
       case "saveAsDocx":
         await import(chrome.runtime.getURL("libs/docx.umd.js"));
